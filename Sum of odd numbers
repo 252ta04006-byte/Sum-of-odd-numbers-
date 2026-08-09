@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i, n, sum = 0;
+
+    // Prompt user for the upper limit
+    printf("Enter the upper limit (N): ");
+    scanf("%d", &n);
+
+    // Loop through 1 to N
+    for (i = 1; i <= n; i++) {
+        // If the number is not divisible by 2, it is odd
+        if (i % 2 != 0) {
+            sum += i; // Add the odd number to sum
+        }
+    }
+
+    printf("The sum of all odd numbers from 1 to %d is: %d\n", n, sum);
+
+    return 0;
+}
